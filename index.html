@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Priyanshu Nagar - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <a href="#home">Priyanshu Nagar</a>
+      </div>
+      <div class="nav-links">
+        <a href="#home" class="nav-item">Home</a>
+        <a href="#about" class="nav-item">About</a>
+        <a href="#projects" class="nav-item">Projects</a>
+        <a href="#contact" class="nav-item">Contact</a>
+      </div>
+      <button id="toggle-dark" class="dark-mode-toggle" aria-label="Toggle dark mode">
+        🌙
+      </button>
+    </nav>
+
+    <button id="scroll-to-top" class="scroll-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <header id="home" class="hero-section fade-in">
+      <div id="particles-js"></div>
+      <div class="hero-content">
+        <h1>Hey, I'm <span class="typewriter-text"></span></h1>
+        <p class="hero-subtitle">
+          B.Tech CSE'28 <br />Aspiring Developer & Low-Level Systems Enthusiast
+        </p>
+        <a href="#projects" class="btn primary-btn scroll-down-arrow" aria-label="View Projects">
+          <i class="fas fa-chevron-down"></i>
+        </a>
+      </div>
+    </header>
+
+    <section id="about" class="about-section fade-in">
+      <div class="section-heading">
+        <h2>About Me</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="about-content">
+        <div class="about-image parallax-effect">
+          <img src="images/ilustration 111.png" alt="Priyanshu Nagar" />
+        </div>
+        <div class="about-text">
+          <p>
+            I'm a first-year CSE student with a keen interest in building
+            real-world projects and diving deep into low-level systems.
+            Currently, I'm expanding my knowledge in Python and C, while actively
+            exploring the vast landscape of web development. My goal is to craft
+            impactful and efficient software solutions.
+          </p>
+          <p>
+            I believe in continuous learning and enjoy tackling complex
+            challenges. My journey in tech is driven by curiosity and a desire
+            to understand how things work from the ground up.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section fade-in">
+      <div class="section-heading">
+        <h2>My Projects</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="javascript">JavaScript</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+        <button class="filter-btn" data-filter="c">C/C++</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card fade-in javascript web" data-category="javascript web">
+          <h3 class="project-title">Interactive Calculator</h3>
+          <p class="project-description">
+            A fully functional, responsive calculator built with vanilla JavaScript,
+            showcasing clean UI/UX and robust error handling.
+          </p>
+          <p class="project-tech"><strong>Tech:</strong> JavaScript, HTML, CSS</p>
+          <div class="project-links">
+            <a href="https://github.com/yourusername/calculator-repo" target="_blank" class="project-link">
+              <i class="fab fa-github"></i> View Code
+            </a>
+            <a href="#" target="_blank" class="project-link">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card fade-in python" data-category="python">
+          <h3 class="project-title">Automated File Organizer</h3>
+          <p class="project-description">
+            A Python script that automatically organizes files in a directory
+            based on their extension, improving productivity.
+          </p>
+          <p class="project-tech"><strong>Tech:</strong> Python</p>
+          <div class="project-links">
+            <a href="https://github.com/yourusername/file-organizer-repo" target="_blank" class="project-link">
+              <i class="fab fa-github"></i> View Code
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card fade-in c" data-category="c">
+          <h3 class="project-title">Basic Shell Implementation</h3>
+          <p class="project-description">
+            A simplified command-line interpreter (shell) implemented in C,
+            handling basic commands and process execution.
+          </p>
+          <p class="project-tech"><strong>Tech:</strong> C, Linux</p>
+          <div class="project-links">
+            <a href="https://github.com/yourusername/simple-shell-repo" target="_blank" class="project-link">
+              <i class="fab fa-github"></i> View Code
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card fade-in web" data-category="web">
+          <h3 class="project-title">Personal Portfolio Site</h3>
+          <p class="project-description">
+            The very portfolio you're viewing, designed and developed from
+            scratch with a focus on modern aesthetics and interactivity.
+          </p>
+          <p class="project-tech"><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+          <div class="project-links">
+            <a href="https://github.com/yourusername/portfolio-repo" target="_blank" class="project-link">
+              <i class="fab fa-github"></i> View Code
+            </a>
+            <a href="#" target="_blank" class="project-link">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section fade-in">
+      <div class="section-heading">
+        <h2>Get In Touch</h2>
+        <div class="underline"></div>
+      </div>
+      <p class="contact-intro">
+        Feel free to reach out if you have a project idea, a question, or just
+        want to connect!
+      </p>
+      <div class="contact-content">
+        <form class="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+            <label for="name">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Your Email" required />
+            <label for="email">Your Email</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit" class="btn primary-btn send-message-btn">
+            Send Message <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+        <div class="social-links-contact">
+          <a
+            href="https://github.com/priyanshu0p"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub Profile"
+          >
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/priyanshu-nagar-a43a86313/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn Profile"
+          >
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a
+            href="mail:priyanshunagar568@gmail.com"
+            aria-label="Email Me"
+          >
+            <i class="fas fa-envelope"></i>
+            <span>Email</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; <span id="current-year"></span> Priyanshu Nagar. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="portfolio.js"></script>
+  </body>
+</html>
